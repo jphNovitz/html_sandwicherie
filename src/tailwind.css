@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 .bg-hero{
+
     background-size: cover;
     background-position: center;
 }
