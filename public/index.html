@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="tailwind.css"/>
 </head>
 <body class="mx-auto text-gray-50">
-<div class="w-screen pb-28 bg-hero ">
+<div class="w-screen p-6 pb-28 bg-hero ">
     <div class="border-solid border-b  border-gray-50">
         <div class="toolbar container mx-auto">
             <aside class="grid">
@@ -26,18 +26,27 @@
             </div>
 
             <div class="col-end-13 col-span-6 flex justify-end">
-                <span class="mx-2 "><a class="text-gray-50 active:text-green-500 active:font-black"
-                                       href="#"> Home</a></span>
-                <span class="mx-2"><a class="text-gray-50 active:text-green-500 active:font-black"
-                                      href="#"> About</a></span>
-                <span class="mx-2"><a class="text-gray-50 active:text-green-500 active:font-black"
-                                      href="#"> Shop</a></span>
-                <span class="mx-2"><a class="text-gray-50 active:text-green-500 active:font-black"
-                                      href="#"> Blog</a></span>
-                <span class="mx-2"><a class="text-gray-50 active:text-green-500 active:font-black"
-                                      href="#"> Pages</a></span>
-                <span class="mx-2"><a class="text-gray-50 active:text-green-500 active:font-black" href="#"> Contact</a></span>
-                <span class="text-text-gray-50 active:text-green active:font-bolder"><a href="#"> S</a></span>
+                <span class="mx-2 ">
+                    <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> Home</a>
+                </span>
+                <span class="mx-2">
+                    <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> About</a>
+                </span>
+                <span class="mx-2">
+                    <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> Shop</a>
+                </span>
+                <span class="mx-2">
+                    <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> Blog</a>
+                </span>
+                <span class="mx-2">
+                    <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> Pages</a>
+                </span>
+                <span class="mx-2">
+                    <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> Contact</a>
+                </span>
+                <span class="text-text-gray-50 active:text-green active:font-bolder">
+                    <a href="#"> S</a>
+                </span>
             </div>
 
         </nav>
@@ -56,15 +65,17 @@
         <section class="grid grid-cols-4 gap-5 py-7">
             <div class="col-start-1  col-span-4 md:col-span-1 flex flex-col ">
                 <h3 class="font-bold pb-2.5 py-4">100% natural</h3>
-                <p class="text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque delectus iusto
+                <p class="txt-md md:text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque
+                    delectus iusto
                     laboriosam
                     magnam maxime nam nesciunt omnis provident quaerat?</p>
                 <h3 class="font-bold  pb-2.5 py-4">100% natural</h3>
-                <p class="text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque delectus iusto
+                <p class="txt-md md:text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque
+                    delectus iusto
                     laboriosam
                     magnam maxime nam nesciunt omnis provident quaerat?</p>
             </div>
-<!--            <div class="col-start-2 col-span-2"-->
+            <!--            <div class="col-start-2 col-span-2"-->
             <div class="col-start-1 col-span-4 md:col-start-2 md:col-span-2 h-40 md:h-auto"
                  style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg') ;
                         background-size: cover ;
@@ -74,11 +85,13 @@
             </div>
             <div class="col-end-4-1  col-span-4 md:col-span-1 flex flex-col">
                 <h3 class="font-bold pb-2.5 py-4">100% natural</h3>
-                <p class="text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque delectus iusto
+                <p class="txt-md md:text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque
+                    delectus iusto
                     laboriosam
                     magnam maxime nam nesciunt omnis provident quaerat?</p>
                 <h3 class="font-bold pb-2.5 py-4">100% natural</h3>
-                <p class="text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque delectus iusto
+                <p class="txt-md md:text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque
+                    delectus iusto
                     laboriosam
                     magnam maxime nam nesciunt omnis provident quaerat?</p>
             </div>
@@ -96,5 +109,40 @@
 
 
 </div>
+
+<div class="container mx-auto p-6 text-gray-900">
+    <nav class="bg-transparent  mx-auto my-8 flex justify-center">
+        <span class="mx-0 px-6 pb-0.5 border-b-2 border-gray-300">
+            <a class=" active:text-green-700 " href="#"> All</a>
+        </span>
+        <span class="mx-0 px-6 pb-0.5 border-b-2 border-gray-300">
+            <a class="active:text-green-500 " href="#"> Vegetables</a>
+        </span>
+        <span class="mx-0 px-6 pb-0.5 border-b-2 border-gray-300">
+            <a class="active:text-green-500 " href="#"> Juice</a>
+        </span>
+        <span class="mx-0 px-6 pb-0.5 border-b-2 border-gray-300">
+            <a class="active:text-green-500 " href="#"> Dried product</a>
+        </span>
+    </nav>
+<!--    @todo border green when active must be an :after element -->
+
+    <section class="w-full grid grid-flow-row grid-cols-3 grid-rows-3 gap-4">
+        <article class="border-solid border-2 border-gray-100 h-48 overflow-hidden relative">
+            <img class="overflow-hidden h-32 w-full" src="images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg" />
+            <div class="absolute top-32 w-full h-32 pt-0.5 hover:top-20 hover:bg-green-200 transition duration-500 ease-in-out">
+                <h3>Green Cabbage</h3>
+                 <h4 class="text-green-600"> 20 €</h4>
+                <ul class="inline-flex w-full">
+                    <li class="my-4">i</li>
+                    <li class="my-4">i</li>
+                    <li class="my-4">i</li>
+                </ul>
+            </div>
+
+        </article>
+    </section>
+</div>
+
 </body>
 </html>
