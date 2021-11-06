@@ -1,6 +1,32 @@
+/*@import url('./public/fonts/stylesheet.css');*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Rusty Cola Pen';
+    src: url('fonts/RustyColaPen-Regular.eot');
+    src: url('fonts/RustyColaPen-Regular.eot?#iefix') format('embedded-opentype'),
+    url('fonts/RustyColaPen-Regular.woff2') format('woff2'),
+    url('fonts/RustyColaPen-Regular.woff') format('woff'),
+    url('fonts/RustyColaPen-Regular.ttf') format('truetype'),
+    url('fonts/RustyColaPen-Regular.svg#RustyColaPen-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Rusty Cola Pen Allcaps';
+    src: url('fonts/caps/RustyColaPen-Allcaps.eot');
+    src: url('fonts/caps/RustyColaPen-Allcaps.eot?#iefix') format('embedded-opentype'),
+    url('fonts/caps/RustyColaPen-Allcaps.woff2') format('woff2'),
+    url('fonts/caps/RustyColaPen-Allcaps.woff') format('woff'),
+    url('fonts/caps/RustyColaPen-Allcaps.ttf') format('truetype'),
+    url('fonts/caps/RustyColaPen-Allcaps.svg#RustyColaPen-Allcaps') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 .bg-hero{
 
