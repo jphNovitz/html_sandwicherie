@@ -3,6 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 @font-face {
     font-family: 'Rusty Cola Pen';
     src: url('fonts/RustyColaPen-Regular.eot');
@@ -18,7 +20,7 @@
 @font-face {
     font-family: 'Rusty Cola Pen Allcaps';
     src: url('fonts/caps/RustyColaPen-Allcaps.eot');
-    src: url('fonts/caps/RustyColaPen-Allcaps.eot?#iefix') format('embedded-opentype'),
+    src: url('fonts/caps/RustyColaPen-Allcaps.eot?#iefix²') format('embedded-opentype'),
     url('fonts/caps/RustyColaPen-Allcaps.woff2') format('woff2'),
     url('fonts/caps/RustyColaPen-Allcaps.woff') format('woff'),
     url('fonts/caps/RustyColaPen-Allcaps.ttf') format('truetype'),
@@ -28,6 +30,23 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Hackney Vector';
+    src: url('fonts/hackney/HackneyPersonalUseOnly.eot');
+    src: url('fonts/hackney/HackneyPersonalUseOnly.eot?#iefix') format('embedded-opentype'),
+    url('fonts/hackney/HackneyPersonalUseOnly.woff2') format('woff2'),
+    url('fonts/hackney/HackneyPersonalUseOnly.woff') format('woff'),
+    url('fonts/hackney/HackneyPersonalUseOnly.ttf') format('truetype'),
+    url('fonts/hackney/HackneyPersonalUseOnly.svg#HackneyPersonalUseOnly') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
 .bg-hero{
 
     background-size: cover;

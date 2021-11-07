@@ -6,109 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Tailwind CSS in Vanilla HTML!</title>
     <link rel="stylesheet" href="tailwind.css"/>
+    <link rel="preload" href="fonts/hackney/HackneyPersonalUseOnly.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body class="mx-auto text-gray-50">
 <div class="w-screen p-6 pb-28 bg-hero ">
     <div class="border-solid border-b  border-gray-50">
         <div class="toolbar container mx-auto">
             <aside class="grid">
-                <span class="col-start-1">order Online</span>
-                <span class="col-start-2">7.30am - 11.30pm</span>
-                <span class="col-end-12 text-right">My account</span>
-                <span class="col-end-13 text-right">C</span>
+                <span class="col-start-1">
+                    <a href="https://facebook.com/jphNovitz" title="Sandwicherie Liège sur Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://messenger.com/jphNovitz" title="Envoyez un message sur Messenger">
+                        <i class="fab fa-facebook-messenger"></i>
+                    </a>
+                    <a href="https://instagram.com/jphNovitz" title="Sandwicherie Liège sur Instagram">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                    <a href="https://facebook.com/jphNovitz" title="Sandwicherie Liège sur Tik Tok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </span>
+                <span class="col-start-2">7.30 - 18.30</span>
+                <span class="col-end-12 text-right"><i class="fas fa-user"></i> Connexion</span>
+                <span class="col-end-13 text-right"><i class="fas fa-shopping-cart"></i></span>
             </aside>
         </div>
     </div>
     <div class="container mx-auto">
-        <nav class="bg-transparent py-6 mx-auto my-6 grid grid grid-cols-13 gap-4">
-            <div class="col-start-1 col-span-5 text-xl font-black flex justify-start uppercase font-rusty">
+        <nav class="bg-transparent py-6 mx-auto my-6 grid grid grid-cols-13 gap-4 flex items-center">
+            <div class="col-start-1 col-span-5 text-6xl font-black flex justify-start uppercase font-hackney">
                 Sandwicherie Liège
             </div>
 
             <div class="col-end-13 col-span-6 flex justify-end">
                 <span class="mx-2 ">
-                    <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> Home</a>
+                    <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> Accueil</a>
                 </span>
                 <span class="mx-2">
-                    <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> About</a>
+                    <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> Menu </a>
                 </span>
                 <span class="mx-2">
-                    <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> Shop</a>
+                    <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> photos</a>
                 </span>
                 <span class="mx-2">
-                    <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> Blog</a>
-                </span>
-                <span class="mx-2">
-                    <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> Pages</a>
+                    <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> A propos</a>
                 </span>
                 <span class="mx-2">
                     <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> Contact</a>
                 </span>
                 <span class="text-text-gray-50 active:text-green active:font-bolder">
-                    <a href="#"> S</a>
+                    <a href="#"><i class="fas fa-search"></i></a>
                 </span>
             </div>
 
         </nav>
-        <header class="cta w-1/3 mx-auto my-16 flex items-center flex-col">
-            <span class="logo">Logo</span>
+        <header class="cta w-1/2 mx-auto my-16 flex items-center flex-col text-center">
+            <span class=" font-rusty-all-caps text-2xl  font-black logo">S.LG</span>
             <span class="">Organic</span>
-            <span class="pitch">Good for natural, Good for you</span>
-            <span class="action bg-green-600 py-2.5 px-6 rounded-2xl mt-8 "><a href="#"> Shop now </a></span>
+            <span class="pitch text-xl font-bold">Des produits frais, bons pour votre santé</span>
+            <span class="action bg-primary py-3  px-16 rounded-2xl mt-8 "><a href="#"><i class="fas fa-eye"></i> Voir le menu</a></span>
         </header>
     </div>
 </div>
 
-<div class="container mx-auto">
-    <div class="w-3/4 mx-auto text-black  py-12 ">
-        <h2 class="font-bold text-2xl">Welcome to Sandwicherie Liège</h2>
-        <section class="grid grid-cols-4 gap-5 py-7">
-            <div class="col-start-1  col-span-4 md:col-span-1 flex flex-col ">
-                <h3 class="font-bold pb-2.5 py-4">100% natural</h3>
-                <p class="txt-md md:text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque
-                    delectus iusto
-                    laboriosam
-                    magnam maxime nam nesciunt omnis provident quaerat?</p>
-                <h3 class="font-bold  pb-2.5 py-4">100% natural</h3>
-                <p class="txt-md md:text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque
-                    delectus iusto
-                    laboriosam
-                    magnam maxime nam nesciunt omnis provident quaerat?</p>
-            </div>
-            <!--            <div class="col-start-2 col-span-2"-->
-            <div class="col-start-1 col-span-4 md:col-start-2 md:col-span-2 h-40 md:h-auto"
-                 style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg') ;
-                        background-size: cover ;
-                        background-position: center;
-            ">
-
-            </div>
-            <div class="col-end-4-1  col-span-4 md:col-span-1 flex flex-col">
-                <h3 class="font-bold pb-2.5 py-4">100% natural</h3>
-                <p class="txt-md md:text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque
-                    delectus iusto
-                    laboriosam
-                    magnam maxime nam nesciunt omnis provident quaerat?</p>
-                <h3 class="font-bold pb-2.5 py-4">100% natural</h3>
-                <p class="txt-md md:text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque
-                    delectus iusto
-                    laboriosam
-                    magnam maxime nam nesciunt omnis provident quaerat?</p>
-            </div>
-        </section>
-    </div>
-</div>
-
-<div class="bg-yellow-600 w-screen py-12">
-    <div class="container mx-auto p-12  flex items-center flex-col text-center border-solid border-2 border-gray-50">
-        <span class="text-green-300 font-bold text-xl">Eat better</span>
-        <span class="font-black text-2xl font-black">Feel better</span>
-        <span class="pitch">We produce food in a way witch is honest, natural and transparent.</span>
-        <span class="action bg-green-600 py-2.5 px-6 rounded-2xl mt-8 "><a href="#"> Shop now </a></span>
-    </div>
-
-
-</div>
 
 <div class="container mx-auto p-6 text-gray-900 text-sm md:text-base">
     <nav class="bg-transparent  mx-auto my-8 flex justify-center">
@@ -125,90 +88,199 @@
             <a class="active:text-green-500 " href="#"> Dried product</a>
         </span>
     </nav>
-<!--    @todo border green when active must be an :after element -->
+    <!--    @todo border green when active must be an :after element -->
 
     <section class="w-full grid grid-flow-row grid-cols-2  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-4">
         <article class="border-solid border-2 bg-gray-50 border-gray-100 h-56 md:h-48  pb-1.5 overflow-hidden relative">
             <div class="overflow-hidden h-32 w-full bg-cover bg-center bg-no-repeat"
-                 style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg')"> </div>
-            <div class="absolute top-28 bg-green-200 md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 hover:top-20 hover:bg-green-200 transition-all duration-700 ease-in-out text-center">
-                <h3>Green Cabbage</h3>
-                 <h4 class="text-green-600"> 20 €</h4>
-                <div class="w-full md:w-1/2 mx-auto flex flex-row justify-between  my-4">
-                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">A</span>
-                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">B</span>
-                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">C</span>
+                 style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg')"></div>
+            <div class="absolute top-28 bg-primary md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 md:hover:top-20 hover:bg-primary  text-green-50 md:text-primary hover:text-green-50 transition-all duration-700 ease-in-out text-center">
+                <h3 class="text-xl ">Green Cabbage</h3>
+                <h4 class="text-xl font-bold"> 20 €</h4>
+                <div class="w-full md:w-1/2 mx-auto flex flex-row justify-between  my-4 text-green-50 ">
+                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">
+                        <a href="#" title="Voir le produit" class="text-white"> <i class="fas fa-search-plus"></i> </a>
+                    </span>
+                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">
+                        <a href="#" title="Ajouter au panier" class="text-green-50">  <i
+                                class="fas fa-shopping-cart"></i> </a>
+                    </span>
+                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">
+                        <a href="#" title="Ajouter à mes favoris"> <i class="fas fa-bookmark"></i> </a>
+                    </span>
                 </div>
             </div>
         </article>
         <article class="border-solid border-2 bg-gray-50 border-gray-100 h-56 md:h-48  pb-1.5 overflow-hidden relative">
             <div class="overflow-hidden h-32 w-full bg-cover bg-center bg-no-repeat"
-                 style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg')"> </div>
-            <div class="absolute top-28 bg-green-200 md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 hover:top-20 hover:bg-green-200 transition-all duration-700 ease-in-out text-center">
-                <h3>Green Cabbage</h3>
-                 <h4 class="text-green-600"> 20 €</h4>
-                <div class="w-full md:w-1/2 mx-auto flex flex-row justify-between  my-4">
-                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">A</span>
-                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">B</span>
-                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">C</span>
+                 style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg')"></div>
+            <div class="absolute top-28 bg-primary md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 md:hover:top-20 hover:bg-primary  text-green-50 md:text-primary hover:text-green-50 transition-all duration-700 ease-in-out text-center">
+                <h3 class="text-xl ">Green Cabbage</h3>
+                <h4 class="text-xl font-bold"> 20 €</h4>
+                <div class="w-full md:w-1/2 mx-auto flex flex-row justify-between  my-4 text-green-50 ">
+                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">
+                        <a href="#" title="Voir le produit" class="text-white"> <i class="fas fa-search-plus"></i> </a>
+                    </span>
+                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">
+                        <a href="#" title="Ajouter au panier" class="text-green-50">  <i
+                                class="fas fa-shopping-cart"></i> </a>
+                    </span>
+                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">
+                        <a href="#" title="Ajouter à mes favoris"> <i class="fas fa-bookmark"></i> </a>
+                    </span>
                 </div>
             </div>
         </article>
         <article class="border-solid border-2 bg-gray-50 border-gray-100 h-56 md:h-48  pb-1.5 overflow-hidden relative">
             <div class="overflow-hidden h-32 w-full bg-cover bg-center bg-no-repeat"
-                 style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg')"> </div>
-            <div class="absolute top-28 bg-green-200 md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 hover:top-20 hover:bg-green-200 transition-all duration-700 ease-in-out text-center">
-                <h3>Green Cabbage</h3>
-                 <h4 class="text-green-600"> 20 €</h4>
-                <div class="w-full md:w-1/2 mx-auto flex flex-row justify-between  my-4">
-                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">A</span>
-                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">B</span>
-                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">C</span>
+                 style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg')"></div>
+            <div class="absolute top-28 bg-primary md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 md:hover:top-20 hover:bg-primary  text-green-50 md:text-primary hover:text-green-50 transition-all duration-700 ease-in-out text-center">
+                <h3 class="text-xl ">Green Cabbage</h3>
+                <h4 class="text-xl font-bold"> 20 €</h4>
+                <div class="w-full md:w-1/2 mx-auto flex flex-row justify-between  my-4 text-green-50 ">
+                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">
+                        <a href="#" title="Voir le produit" class="text-white"> <i class="fas fa-search-plus"></i> </a>
+                    </span>
+                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">
+                        <a href="#" title="Ajouter au panier" class="text-green-50">  <i
+                                class="fas fa-shopping-cart"></i> </a>
+                    </span>
+                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">
+                        <a href="#" title="Ajouter à mes favoris"> <i class="fas fa-bookmark"></i> </a>
+                    </span>
                 </div>
             </div>
         </article>
         <article class="border-solid border-2 bg-gray-50 border-gray-100 h-56 md:h-48  pb-1.5 overflow-hidden relative">
             <div class="overflow-hidden h-32 w-full bg-cover bg-center bg-no-repeat"
-                 style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg')"> </div>
-            <div class="absolute top-28 bg-green-200 md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 hover:top-20 hover:bg-green-200 transition-all duration-700 ease-in-out text-center">
-                <h3>Green Cabbage</h3>
-                 <h4 class="text-green-600"> 20 €</h4>
-                <div class="w-full md:w-1/2 mx-auto flex flex-row justify-between  my-4">
-                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">A</span>
-                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">B</span>
-                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">C</span>
+                 style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg')"></div>
+            <div class="absolute top-28 bg-primary md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 md:hover:top-20 hover:bg-primary  text-green-50 md:text-primary hover:text-green-50 transition-all duration-700 ease-in-out text-center">
+                <h3 class="text-xl ">Green Cabbage</h3>
+                <h4 class="text-xl font-bold"> 20 €</h4>
+                <div class="w-full md:w-1/2 mx-auto flex flex-row justify-between  my-4 text-green-50 ">
+                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">
+                        <a href="#" title="Voir le produit" class="text-white"> <i class="fas fa-search-plus"></i> </a>
+                    </span>
+                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">
+                        <a href="#" title="Ajouter au panier" class="text-green-50">  <i
+                                class="fas fa-shopping-cart"></i> </a>
+                    </span>
+                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">
+                        <a href="#" title="Ajouter à mes favoris"> <i class="fas fa-bookmark"></i> </a>
+                    </span>
                 </div>
             </div>
         </article>
         <article class="border-solid border-2 bg-gray-50 border-gray-100 h-56 md:h-48  pb-1.5 overflow-hidden relative">
             <div class="overflow-hidden h-32 w-full bg-cover bg-center bg-no-repeat"
-                 style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg')"> </div>
-            <div class="absolute top-28 bg-green-200 md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 hover:top-20 hover:bg-green-200 transition-all duration-700 ease-in-out text-center">
-                <h3>Green Cabbage</h3>
-                 <h4 class="text-green-600"> 20 €</h4>
-                <div class="w-full md:w-1/2 mx-auto flex flex-row justify-between  my-4">
-                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">A</span>
-                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">B</span>
-                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">C</span>
+                 style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg')"></div>
+            <div class="absolute top-28 bg-primary md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 md:hover:top-20 hover:bg-primary  text-green-50 md:text-primary hover:text-green-50 transition-all duration-700 ease-in-out text-center">
+                <h3 class="text-xl ">Green Cabbage</h3>
+                <h4 class="text-xl font-bold"> 20 €</h4>
+                <div class="w-full md:w-1/2 mx-auto flex flex-row justify-between  my-4 text-green-50 ">
+                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">
+                        <a href="#" title="Voir le produit" class="text-white"> <i class="fas fa-search-plus"></i> </a>
+                    </span>
+                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">
+                        <a href="#" title="Ajouter au panier" class="text-green-50">  <i
+                                class="fas fa-shopping-cart"></i> </a>
+                    </span>
+                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">
+                        <a href="#" title="Ajouter à mes favoris"> <i class="fas fa-bookmark"></i> </a>
+                    </span>
                 </div>
             </div>
         </article>
+        <article class="border-solid border-2 bg-gray-50 border-gray-100 h-56 md:h-48  pb-1.5 overflow-hidden relative">
+            <div class="overflow-hidden h-32 w-full bg-cover bg-center bg-no-repeat"
+                 style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg')"></div>
+            <div class="absolute top-28 bg-primary md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 md:hover:top-20 hover:bg-primary  text-green-50 md:text-primary hover:text-green-50 transition-all duration-700 ease-in-out text-center">
+                <h3 class="text-xl ">Green Cabbage</h3>
+                <h4 class="text-xl font-bold"> 20 €</h4>
+                <div class="w-full md:w-1/2 mx-auto flex flex-row justify-between  my-4 text-green-50 ">
+                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">
+                        <a href="#" title="Voir le produit" class="text-white"> <i class="fas fa-search-plus"></i> </a>
+                    </span>
+                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">
+                        <a href="#" title="Ajouter au panier" class="text-green-50">  <i
+                                class="fas fa-shopping-cart"></i> </a>
+                    </span>
+                    <span class="border-solid border-2 border-green-50  rounded-2xl w-7 text-center">
+                        <a href="#" title="Ajouter à mes favoris"> <i class="fas fa-bookmark"></i> </a>
+                    </span>
+                </div>
+            </div>
+        </article>
+
     </section>
 </div>
 
+<div class="bg-yellow-600 w-screen py-12">
+    <div class="container mx-auto p-12  flex items-center flex-col text-center border-solid border-2 border-gray-50">
+        <span class="text-green-300 font-bold text-Xxl">Eat better</span>
+        <span class="font-black text-2xl font-black">Feel better</span>
+        <span class="pitch">We produce food in a way witch is honest, natural and transparent.</span>
+        <span class="action bg-primary py-2.5 px-6 rounded-2xl mt-8 "><a href="#"> <i class="fas fa-eye"></i> Voir le menu </a></span>
+    </div>
 
-<section class="w-full h-56 my-16 grid flex flex-row bg-cover bg-center bg-no-repeat"
+
+</div>
+
+<div class="container mx-auto">
+    <div class="w-3/4 mx-auto text-black  py-12 ">
+        <h2 class="font-bold text-3xl bg-gradient-to-r from-primary to-transparent text-gray-50 font-hackney pl-4">Une
+            petite faim ?</h2>
+        <section class="grid grid-cols-4 gap-5 py-7">
+            <div class="col-start-1  col-span-4 md:col-span-1 flex flex-col ">
+                <h3 class="font-bold text-dark pb-2.5 py-4">100% natural</h3>
+                <p class="txt-md md:text-xs ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque
+                    delectus iusto
+                    laboriosam
+                    magnam maxime nam nesciunt omnis provident quaerat?</p>
+                <h3 class="font-bold text-dark  pb-2.5 py-4">100% natural</h3>
+                <p class="txt-md md:text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque
+                    delectus iusto
+                    laboriosam
+                    magnam maxime nam nesciunt omnis provident quaerat?</p>
+            </div>
+            <!--            <div class="col-start-2 col-span-2"-->
+            <div class="col-start-1 col-span-4 md:col-start-2 md:col-span-2 h-40 md:h-auto"
+                 style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg') ;
+                        background-size: cover ;
+                        background-position: center;
+            ">
+
+            </div>
+            <div class="col-end-4-1  col-span-4 md:col-span-1 flex flex-col">
+                <h3 class="font-bold text-dark pb-2.5 py-4">100% natural</h3>
+                <p class="txt-md md:text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque
+                    delectus iusto
+                    laboriosam
+                    magnam maxime nam nesciunt omnis provident quaerat?</p>
+                <h3 class="font-bold text-dark pb-2.5 py-4">100% natural</h3>
+                <p class="txt-md md:text-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque cumque
+                    delectus iusto
+                    laboriosam
+                    magnam maxime nam nesciunt omnis provident quaerat?</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<section class="w-full h-56 md:h-72 my-16 grid flex flex-row bg-cover bg-center bg-no-repeat"
          style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg')">
-    <article class="w-full md:w-1/2 h-full bg-prom bg-gradient-to-r inline-flex flex-col justify-center items-center justify-self-end">
+    <article
+            class="w-full md:w-1/2 h-full bg-prom bg-gradient-to-r inline-flex flex-col justify-center items-center justify-self-end">
         <h3>Lorem ipsum dolor sit amet.</h3>
         <h4>Lorem ipsum dolor sit amet, consectetur adipisicing.</h4>
         <h5>50 %</h5>
-        <a href="#"  id="cta-prom" class="bg-green-800 text-gray-50 rounded-3xl p-2">Shop now</a>
+        <a href="#" id="cta-prom" class="bg-primary text-gray-50 rounded-3xl p-2"><i class="fas fa-eye"></i> Vers mon
+            repas </a>
     </article>
 </section>
 
 <div class="bg-yellow-600 p-12 py-16  mt-28 mb-0 relative">
-    <aside class="absolute w-1/2 left-1/4 -top-16 h-32 p-2  bg-green-600 text-center flex flex-col justify-center">
+    <aside class="absolute w-1/2 left-1/4 -top-16 h-32 p-2  bg-primary text-center flex flex-col justify-center">
         <p>Connect to the mailing list</p>
     </aside>
     <footer class="container mx-auto grid grid-cols-4 flex gap-4">
@@ -234,8 +306,19 @@
 </div>
 
 <div class="w-full p-6 bg-yellow-800 grid grid-cols-2">
-    <article class="text-left"> Développeur Web 2021</article>
-    <article class="text-right"> Facebook Instagram</article>
+    <h6 class="text-left">Réalisation Jiffy, Développeur Web à Liège (2021)</h6>
+    <article class="text-right"><a href="https://facebook.com/jphNovitz" title="Sandwicherie Liège sur Facebook">
+        <i class="fab fa-facebook"></i>
+    </a>
+        <a href="https://messenger.com/jphNovitz" title="Envoyez un message sur Messenger">
+            <i class="fab fa-facebook-messenger"></i>
+        </a>
+        <a href="https://instagram.com/jphNovitz" title="Sandwicherie Liège sur Instagram">
+            <i class="fab fa-instagram-square"></i>
+        </a>
+        <a href="https://facebook.com/jphNovitz" title="Sandwicherie Liège sur Tik Tok">
+            <i class="fab fa-tiktok"></i>
+        </a></article>
 
 </div>
 
