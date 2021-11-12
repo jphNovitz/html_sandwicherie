@@ -39,8 +39,11 @@ module.exports = {
                 'prom': "linear-gradient(to right, rgba(134, 188, 66, 0), rgba(134, 188, 66, 0.4), rgba(134, 188, 66, 0.6) )",
                 // 'prom': "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) )",
                 // 'prom': "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6),  rgba(0, 0, 0, 0) )",
-                'roundies': "url('../public/images/bg-rounds.png')"
+                'roundies': "url('../public/images/bg-rounds.png')",
                 // 'prom': "linear-gradient(to right, rgba(217, 219, 6, 0), rgba(217, 219, 6, 0.6),  rgba(217, 219, 6, 0) )"
+                'orange': "linear-gradient(to right, rgba(217, 119, 6, 0.7), rgba(217, 119, 6, 1), rgba(217, 119, 6, 0.7) ), url('../public/images/bg-orange-healthy.png')",
+                'footer': "linear-gradient(to right, rgba(217, 119, 6, 0.95), rgba(217, 119, 6, .95), rgba(217, 119, 6, 0.95) ), url('../public/images/bg-footer.png')"
+
             }
         },
     },

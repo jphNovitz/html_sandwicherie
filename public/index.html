@@ -4,7 +4,7 @@
     <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Tailwind CSS in Vanilla HTML!</title>
+    <title>Sandwicherie Liège - Création de sites web pour l'horeca</title>
     <link rel="stylesheet" href="tailwind.css"/>
     <link rel="preload" href="fonts/hackney/HackneyPersonalUseOnly.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
@@ -215,7 +215,7 @@
     </section>
 </div>
 
-<div class="bg-yellow-600 w-screen py-12    ">
+<div class="bg-orange bg-cover bg-no-repeat bg-center w-screen py-12    ">
     <div class="container mx-auto p-12  flex items-center flex-col text-center border-solid border-2 border-gray-50">
         <span class="text-green-300 font-bold text-Xxl">Mangez meilleur</span>
         <span class="font-black text-2xl font-black">Sentez-vous mieux</span>
@@ -232,7 +232,7 @@
     </h2>
     <section class="  mx-auto grid grid-cols-2">
         <article class=" my-5 bg-50% bg-no-repeat bg-center"
-                style="background-image: url('images/louis-hansel-QWzn9sb6kuQ-unsplash.jpg')">
+                 style="background-image: url('images/louis-hansel-QWzn9sb6kuQ-unsplash.jpg')">
 
         </article>
 
@@ -337,17 +337,24 @@
 </div>
 
 
-<div class="bg-yellow-600 p-12 py-16  mt-28 mb-0 relative">
-    <aside class="absolute w-1/2 left-1/4 -top-16 h-32 p-2  bg-primary text-center flex flex-col justify-center">
-        <p>Connect to the mailing list</p>
+<div class="bg-footer p-12 py-16  mt-28 mb-0 relative">
+    <aside class="absolute  container mx-auto  -top-16  left-0 right-0 h-28 bg-primary text-center flex flex-col justify-center font-bold ">
+        <p>
+            Besoin d'un site pour votre sandwicherie ?
+            <a href="mailto:hello@jphnovitz.be" title="besoin d'un site pour votre sandwicherie, contactez moi" class="font-black underline">
+                Contactez-moi
+            </a>
+        </p>
     </aside>
     <footer class="container mx-auto grid grid-cols-4 flex gap-4">
         <h4 class="mx-auto col-span-4 my-8 font-black text-4xl">Sandwicherie Liège</h4>
         <article>
             <h5 class="font-bold uppercase">Contact</h5>
-            <p>Rue de la province 1
-                <br>4000 Liège
-            </p>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Adresse: Liège (province)</li>
+                <li><i class="fas fa-envelope"></i> Email: <a href="mailto:hello@jphnovitz.be">hello@jphnovitz.be</a> </li>
+                <li><i class="fab fa-whatsapp"></i> Whatsapp: 0460 21 57 59</li>
+            </ul>
         </article>
 
         <article>
@@ -363,7 +370,7 @@
     </footer>
 </div>
 
-<div class="w-full p-6 bg-yellow-800 grid grid-cols-2">
+<div class="w-full p-3 bg-yellow-800 grid grid-cols-2">
     <h6 class="text-left">Réalisation Jiffy, Développeur Web à Liège (2021)</h6>
     <article class="text-right"><a href="https://facebook.com/jphNovitz" title="Sandwicherie Liège sur Facebook">
         <i class="fab fa-facebook"></i>
