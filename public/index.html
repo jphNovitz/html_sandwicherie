@@ -30,22 +30,30 @@
                         <i class="fab fa-tiktok"></i>
                     </a>
                 </span>
-                    <span class="w-1/2 md:w-auto md:col-start-2 text-right">7.30 - 18.30</span>
+                <span class="w-1/2 md:w-auto md:col-start-2 text-right">7.30 - 18.30</span>
 
 
-                    <span class="w-1/2 md:w-auto md:col-end-12 md:text-right"><i class="fas fa-user"></i> Connexion</span>
-                    <span class="w-1/2 md:w-auto md:col-end-13 text-right md:text-right"><i class="fas fa-shopping-cart"></i></span>
+                <span class="w-1/2 md:w-auto md:col-end-12 md:text-right"><i class="fas fa-user"></i> Connexion</span>
+                <span class="w-1/2 md:w-auto md:col-end-13 text-right md:text-right"><i
+                        class="fas fa-shopping-cart"></i></span>
 
             </aside>
         </div>
     </div>
+    <span class="flex my-5 md:hidden">
+        <a class="text-gray-50 active:text-green-500 active:font-black" href="#" id="menu-button">
+            <i class="fas fa-bars fa-2x"></i>
+        </a>
+    </span>
     <div class="container mx-auto">
-        <nav class="bg-transparent py-6 mx-auto my-6 grid grid grid-cols-13 gap-4 flex items-center">
-            <div class="col-start-1 col-span-5 text-6xl font-black flex justify-start uppercase font-hackney">
+        <nav class="bg-transparent md:py-6 mx-auto my-6 flex flex-col md:grid  md:grid-cols-13 gap-4 flex items-center">
+
+            <div class="col-start-1 col-span-5 text-6xl font-black flex justify-center flex-wrap md:justify-start uppercase font-hackney">
                 Sandwicherie Liège
             </div>
 
-            <div class="col-end-13 col-span-6 flex justify-end">
+            <div class=" flex-col md:flex-row md:col-end-13 md:col-span-6 flex md:justify-end">
+
                 <span class="mx-2 ">
                     <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> Accueil</a>
                 </span>
@@ -61,7 +69,7 @@
                 <span class="mx-2">
                     <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> Contact</a>
                 </span>
-                <span class="text-text-gray-50 active:text-green active:font-bolder">
+                <span class="text-text-gray-50 active:text-green active:font-bolder text-center">
                     <a href="#"><i class="fas fa-search"></i></a>
                 </span>
             </div>
@@ -71,7 +79,12 @@
             <span class=" font-rusty-all-caps text-2xl  font-black logo">S.LG</span>
             <span class="">Organic</span>
             <span class="pitch text-xl font-bold">Des produits frais, bons pour votre santé</span>
-            <span class="action bg-primary py-3  px-16 rounded-2xl mt-8 "><a href="#"><i class="fas fa-eye"></i> Voir le menu</a></span>
+            <span class="action bg-primary py-3  px-16 rounded-2xl mt-8 w-screen md:w-auto">
+                <a href="#">
+                    <i class="fas fa-eye"></i>
+                    Voir le menu
+                </a>
+            </span>
         </header>
     </div>
 </div>
@@ -96,9 +109,9 @@
 
     <section class="w-full grid grid-flow-row grid-cols-2  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-4">
         <article class="border-solid border-2 bg-gray-50 border-gray-100 h-56 md:h-48  pb-1.5 overflow-hidden relative">
-            <div class="overflow-hidden h-32 w-full bg-cover bg-center bg-no-repeat"
+            <div class="overflow-hidden h-32 w-full bg-contain md:bg-cover bg-top md:bg-center  bg-no-repeat"
                  style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg')"></div>
-            <div class="absolute top-28 bg-primary md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 md:hover:top-20 hover:bg-primary  text-green-50 md:text-primary hover:text-green-50 transition-all duration-700 ease-in-out text-center">
+            <div class="absolute top-20 bg-primary md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 md:hover:top-20 hover:bg-primary  text-green-50 md:text-primary hover:text-green-50 transition-all duration-700 ease-in-out text-center">
                 <h3 class="text-xl ">Green Cabbage</h3>
                 <h4 class="text-xl font-bold"> 20 €</h4>
                 <div class="w-full md:w-1/2 mx-auto flex flex-row justify-between  my-4 text-green-50 ">
@@ -118,7 +131,7 @@
         <article class="border-solid border-2 bg-gray-50 border-gray-100 h-56 md:h-48  pb-1.5 overflow-hidden relative">
             <div class="overflow-hidden h-32 w-full bg-cover bg-center bg-no-repeat"
                  style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg')"></div>
-            <div class="absolute top-28 bg-primary md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 md:hover:top-20 hover:bg-primary  text-green-50 md:text-primary hover:text-green-50 transition-all duration-700 ease-in-out text-center">
+            <div class="absolute top-20 bg-primary md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 md:hover:top-20 hover:bg-primary  text-green-50 md:text-primary hover:text-green-50 transition-all duration-700 ease-in-out text-center">
                 <h3 class="text-xl ">Green Cabbage</h3>
                 <h4 class="text-xl font-bold"> 20 €</h4>
                 <div class="w-full md:w-1/2 mx-auto flex flex-row justify-between  my-4 text-green-50 ">
@@ -138,7 +151,7 @@
         <article class="border-solid border-2 bg-gray-50 border-gray-100 h-56 md:h-48  pb-1.5 overflow-hidden relative">
             <div class="overflow-hidden h-32 w-full bg-cover bg-center bg-no-repeat"
                  style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg')"></div>
-            <div class="absolute top-28 bg-primary md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 md:hover:top-20 hover:bg-primary  text-green-50 md:text-primary hover:text-green-50 transition-all duration-700 ease-in-out text-center">
+            <div class="absolute top-20 bg-primary md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 md:hover:top-20 hover:bg-primary  text-green-50 md:text-primary hover:text-green-50 transition-all duration-700 ease-in-out text-center">
                 <h3 class="text-xl ">Green Cabbage</h3>
                 <h4 class="text-xl font-bold"> 20 €</h4>
                 <div class="w-full md:w-1/2 mx-auto flex flex-row justify-between  my-4 text-green-50 ">
@@ -158,7 +171,7 @@
         <article class="border-solid border-2 bg-gray-50 border-gray-100 h-56 md:h-48  pb-1.5 overflow-hidden relative">
             <div class="overflow-hidden h-32 w-full bg-cover bg-center bg-no-repeat"
                  style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg')"></div>
-            <div class="absolute top-28 bg-primary md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 md:hover:top-20 hover:bg-primary  text-green-50 md:text-primary hover:text-green-50 transition-all duration-700 ease-in-out text-center">
+            <div class="absolute top-20 bg-primary md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 md:hover:top-20 hover:bg-primary  text-green-50 md:text-primary hover:text-green-50 transition-all duration-700 ease-in-out text-center">
                 <h3 class="text-xl ">Green Cabbage</h3>
                 <h4 class="text-xl font-bold"> 20 €</h4>
                 <div class="w-full md:w-1/2 mx-auto flex flex-row justify-between  my-4 text-green-50 ">
@@ -178,7 +191,7 @@
         <article class="border-solid border-2 bg-gray-50 border-gray-100 h-56 md:h-48  pb-1.5 overflow-hidden relative">
             <div class="overflow-hidden h-32 w-full bg-cover bg-center bg-no-repeat"
                  style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg')"></div>
-            <div class="absolute top-28 bg-primary md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 md:hover:top-20 hover:bg-primary  text-green-50 md:text-primary hover:text-green-50 transition-all duration-700 ease-in-out text-center">
+            <div class="absolute top-20 bg-primary md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 md:hover:top-20 hover:bg-primary  text-green-50 md:text-primary hover:text-green-50 transition-all duration-700 ease-in-out text-center">
                 <h3 class="text-xl ">Green Cabbage</h3>
                 <h4 class="text-xl font-bold"> 20 €</h4>
                 <div class="w-full md:w-1/2 mx-auto flex flex-row justify-between  my-4 text-green-50 ">
@@ -198,7 +211,7 @@
         <article class="border-solid border-2 bg-gray-50 border-gray-100 h-56 md:h-48  pb-1.5 overflow-hidden relative">
             <div class="overflow-hidden h-32 w-full bg-cover bg-center bg-no-repeat"
                  style="background-image: url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg')"></div>
-            <div class="absolute top-28 bg-primary md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 md:hover:top-20 hover:bg-primary  text-green-50 md:text-primary hover:text-green-50 transition-all duration-700 ease-in-out text-center">
+            <div class="absolute top-20 bg-primary md:bg-transparent md:top-32 w-full h-32 px-4 pt-0.5 md:hover:top-20 hover:bg-primary  text-green-50 md:text-primary hover:text-green-50 transition-all duration-700 ease-in-out text-center">
                 <h3 class="text-xl ">Green Cabbage</h3>
                 <h4 class="text-xl font-bold"> 20 €</h4>
                 <div class="w-full md:w-1/2 mx-auto flex flex-row justify-between  my-4 text-green-50 ">
