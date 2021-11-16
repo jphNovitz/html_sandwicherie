@@ -9,6 +9,7 @@
     <link rel="preload" href="fonts/hackney/HackneyPersonalUseOnly.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
           integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="app.js" defer="true"></script>
 </head>
 <body class="mx-auto text-gray-50">
 <div class="w-screen p-6 pb-28 bg-hero ">
@@ -52,7 +53,7 @@
                 Sandwicherie Liège
             </div>
 
-            <div class=" flex-col md:flex-row md:col-end-13 md:col-span-6 flex md:justify-end">
+            <div id = "menu-items" class="h-0 md:h-auto transition-height duration-1000 ease-in-out  overflow-hidden flex-col md:flex-row md:col-end-13 md:col-span-6 flex md:justify-end">
 
                 <span class="mx-2 ">
                     <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> Accueil</a>
@@ -364,7 +365,7 @@
             </a>
         </p>
     </aside>
-    <footer class="container mx-auto grid grid-cols-4 flex gap-4">
+    <footer class="container mx-auto grid grid-cols-1 md:grid-cols-4  gap-4">
         <h4 class="mx-auto col-span-4 my-8 font-black text-4xl">Sandwicherie Liège</h4>
         <article>
             <h5 class="font-bold uppercase">Contact</h5>
@@ -384,14 +385,15 @@
                 <li class="list-none">Drinks</li>
             </ul>
         </article>
-        <article><h5 class="font-bold uppercase">Twitter</h5></article>
-        <article><h5 class="font-bold uppercase">Photos</h5></article>
+        <article class="hidden md:flex"><h5 class="font-bold uppercase">Twitter</h5></article>
+        <article class="hidden md:flex"><h5 class="font-bold uppercase">Photos</h5></article>
     </footer>
 </div>
 
-<div class="w-full p-3 bg-yellow-800 grid grid-cols-2">
-    <h6 class="text-left">Réalisation Jiffy, Développeur Web à Liège (2021)</h6>
-    <article class="text-right"><a href="https://facebook.com/jphNovitz" title="Sandwicherie Liège sur Facebook">
+<div class="w-full p-3 bg-yellow-800 flex flex-col md:grid md:grid-cols-2">
+    <h6 class="text-left text-sm md:text-base">Réalisation Jiffy, Développeur Web à Liège (2021)</h6>
+    <article class="text-center md:text-right">
+        <a href="https://facebook.com/jphNovitz" title="Sandwicherie Liège sur Facebook">
         <i class="fab fa-facebook"></i>
     </a>
         <a href="https://messenger.com/jphNovitz" title="Envoyez un message sur Messenger">
@@ -402,7 +404,8 @@
         </a>
         <a href="https://facebook.com/jphNovitz" title="Sandwicherie Liège sur Tik Tok">
             <i class="fab fa-tiktok"></i>
-        </a></article>
+        </a>
+    </article>
 
 </div>
 
