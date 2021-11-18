@@ -53,7 +53,8 @@
                 Sandwicherie Liège
             </div>
 
-            <div id = "menu-items" class="h-0 md:h-auto transition-height duration-1000 ease-in-out  overflow-hidden flex-col md:flex-row md:col-end-13 md:col-span-6 flex md:justify-end">
+            <div id="menu-items"
+                 class="h-0 md:h-auto transition-height duration-1000 ease-in-out  overflow-hidden flex-col md:flex-row md:col-end-13 md:col-span-6 flex md:justify-end">
 
                 <span class="mx-2 ">
                     <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> Accueil</a>
@@ -311,7 +312,7 @@
                 </div>
             </div>
         </article>
-       
+
     </section>
 </div>
 
@@ -326,41 +327,46 @@
 
 </div>
 
-<div class="container mx-auto my-20 text-dark">
+<div class="container mx-auto my-20 text-dark relative ">
     <h2 class="font-bold text-3xl bg-gradient-to-r from-primary to-transparent text-gray-50 font-hackney pl-4">
         Nos menus
     </h2>
-    <section class="  mx-auto grid grid-cols-2">
-        <article class=" my-5 bg-50% bg-no-repeat bg-center"
-                 style="background-image: url('images/louis-hansel-QWzn9sb6kuQ-unsplash.jpg')">
+    <section class=" mx-auto grid grid-cols-2 px-4 md:px-9">
+        <article class="h-44 my-5 bg-cover  bg-no-repeat bg-center"
+                 style="background-image: url('images/sandwicherie-liege-coeur-clam.png')">
 
         </article>
 
-        <article class=" my-5 flex flex-col">
+        <article class="pl-6 my-5 flex flex-col">
             <h3>
-                Lorem ipsum dolor
+                Un midi à la mer
             </h3>
-            <h4 class="text-primary font-black">12 €</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, velit.</p>
+            <h4 class="text-primary font-black">8 €</h4>
+<!--            <p>Un sandwiche coeur de clam, une boisson et une douceur.</p>-->
             <ul class="list-disc pl-5">
-                <li>Lorem ipsum dolor.</li>
-                <li>Lorem ipsum dolor.</li>
-                <li>Lorem ipsum dolor.</li>
+                <li>Sandwiche "Coeur de Clam"</li>
+                <li>Une boisson</li>
+                <li>Une douceur</li>
             </ul>
         </article>
     </section>
-    <section class="w-full mx-auto grid grid-cols-3 gap-4">
-        <article class="h-32 my-5 bg-cover bg-no-repeat bg-center"
-                 style="background-image: url('images/louis-hansel-QWzn9sb6kuQ-unsplash.jpg')">
-            1
+    <div class="w-full absolute top-0 bottom-0 flex items-center justify-between c">
+        <span class="bg-gray-200 text-gray-600 px-2 py-1 rounded-2xl">
+            <a href="#"><i class="fas fa-chevron-left"></i></a>
+        </span>
+        <span class="bg-gray-200 text-gray-600 px-2 py-1 rounded-2xl">
+        <a href="#"> <i class="fas fa-chevron-right"></i></a>
+        </span>
+    </div>
+    <section class="w-full mx-auto grid grid-cols-3 gap-4 px-4 md:px-9">
+        <article class="h-32 md:h-36 my-5 bg-cover bg-no-repeat bg-center"
+                 style="background-image: url('images/sandwicherie-liege-coeur-clam.png')">
         </article>
-        <article class="h-32 my-5 bg-cover bg-no-repeat bg-center"
-                 style="background-image: url('images/louis-hansel-QWzn9sb6kuQ-unsplash.jpg')">
-            1
+        <article class="h-32 md:h-36 my-5 bg-cover bg-no-repeat bg-center"
+                 style="background-image: url('images/sandwicherie-liege-coca-zero.png')">
         </article>
-        <article class="h-32 my-5 bg-cover bg-no-repeat bg-center"
+        <article class="h-32 md:h-36 my-5 bg-cover bg-no-repeat bg-center"
                  style="background-image: url('images/louis-hansel-QWzn9sb6kuQ-unsplash.jpg')">
-            1
         </article>
 
     </section>
@@ -380,9 +386,10 @@
 </section>
 
 <div class="container mx-auto">
-    <div class="w-3/4 mx-auto text-black  py-12 ">
-        <h2 class="font-bold text-3xl bg-gradient-to-r from-primary to-transparent text-gray-50 font-hackney pl-4">Une
-            petite faim ?</h2>
+    <div class="w-3/4 mx-auto text-dark  py-12 ">
+        <h2 class="font-bold text-3xl bg-gradient-to-r from-primary to-transparent text-gray-50 font-hackney pl-4">
+            Une petite faim ?
+        </h2>
         <section class="grid grid-cols-4 gap-5 py-7">
             <div class="col-start-1  col-span-4 md:col-span-1 flex flex-col ">
                 <span class="w-12 h-12 mx-auto mt-4 flex items-center justify-center text-primary bg-roundies bg-cover bg-no-repeat bg-left">
@@ -476,8 +483,8 @@
     <h6 class="text-left text-sm md:text-base">Réalisation Jiffy, Développeur Web à Liège (2021)</h6>
     <article class="text-center md:text-right">
         <a href="https://facebook.com/jphNovitz" title="Sandwicherie Liège sur Facebook">
-        <i class="fab fa-facebook"></i>
-    </a>
+            <i class="fab fa-facebook"></i>
+        </a>
         <a href="https://messenger.com/jphNovitz" title="Envoyez un message sur Messenger">
             <i class="fab fa-facebook-messenger"></i>
         </a>
