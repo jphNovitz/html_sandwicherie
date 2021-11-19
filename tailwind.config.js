@@ -36,11 +36,10 @@ module.exports = {
             },
             backgroundImage: {
                 'hero': "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg')",
+                'detail': "linear-gradient(to bottom, rgba(13, 38, 17, 0.3), rgba(13, 38, 17, 0.8), rgba(13, 38, 17, 0.3) ), url('images/raphael-nogueira-Znvxeud6sDc-unsplash.jpg')",
+                'detail-title': "linear-gradient(to right, rgba(249, 250, 251, 0.5), rgba(249, 250, 251, 0.95), rgba(249, 250, 251, 0.5))",
                 'prom': "linear-gradient(to right, rgba(134, 188, 66, 0), rgba(134, 188, 66, 0.4), rgba(134, 188, 66, 0.6) )",
-                // 'prom': "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6) )",
-                // 'prom': "linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6),  rgba(0, 0, 0, 0) )",
                 'roundies': "url('images/bg-rounds.png')",
-                // 'prom': "linear-gradient(to right, rgba(217, 219, 6, 0), rgba(217, 219, 6, 0.6),  rgba(217, 219, 6, 0) )"
                 'orange': "linear-gradient(to right, rgba(217, 119, 6, 0.7), rgba(217, 119, 6, 1), rgba(217, 119, 6, 0.7) ), url('images/bg-orange-healthy.png')",
                 'footer': "linear-gradient(to right, rgba(217, 119, 6, 0.95), rgba(217, 119, 6, .95), rgba(217, 119, 6, 0.95) ), url('images/bg-footer.png')"
 
