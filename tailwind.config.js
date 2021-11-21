@@ -4,6 +4,9 @@ module.exports = {
     purge: [],
     darkMode: false, // or 'media' or 'class'
     theme: {
+        backgroundPosition: {
+            'top-2': 'center top -1rem',
+        },
         backgroundSize: {
             'auto': 'auto',
             'cover': 'cover',
