@@ -80,126 +80,36 @@
         <header class="cta w-3/4 mx-auto my-8 flex items-center flex-col text-center">
             <div id="detail-header">
                 <span class="bg-detail-title w-1/2 mx-auto font-hackney font-black text-xl md:text-5xl text-dark px-6 ">
-                    Coeur de Clam
+                    Mon panier
                 </span>
             </div>
         </header>
     </div>
 </div>
 
-<div class="container mx-auto p-6 md:p-0"> <!--container-->
-    <div class="flex flex-col-reverse md:grid md:grid-cols-2 md:gap-12 text-dark my-12">
-        <div class="my-12 md:-my-0 grid grid-cols-2 md:grid-cols-3 gap-4"> <!-- product detail left side -->
-            <div class="col-span-2 md:col-span-3">
-                <img src="../images/sandwicherie-liege-coeur-clam.png" class="w-full"
-                     alt="sandwicherie liege coeur de clam">
-            </div>
-            <div>
-                <img src="../images/sandwicherie-liege-coeur-clam.png" alt="sandwicherie liege coeur de clam">
-            </div>
-            <div>
-                <img src="../images/sandwicherie-liege-coeur-clam.png" alt="sandwicherie liege coeur de clam">
-            </div>
-            <div>
-                <img src="../images/sandwicherie-liege-coeur-clam.png" alt="sandwicherie liege coeur de clam">
-            </div>
-        </div><!-- END product detail left side -->
-        <div> <!-- product detail right side -->
-            <h1 class="text-2xl font-bold">Coeur de Clam</h1> <!-- product name -->
-            <span class="mt-4 mb-7 flex flex-row text-yellow-400">  <!-- product stars -->
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-                <i class="far fa-star"></i>
-            </span>  <!-- END product stars -->
-            <span class="text-primary text-3xl font-black">5 €</span>  <!-- product price -->
-            <h2 class="text-gray-600 font-bold py-7 pt-6"> Osez Goûter ce sandwiche à base de fruits de mer, même si
-                vous pensez ne pas aimer ... surtout si vous croyez ne pas aimer !</h2>
+<div class="container mx-auto p-6 -md:p-0 text-gray-900"> <!--container-->
 
-            <ul class="mt-4 mb-7 flex flex-col xl:grid xl:grid-cols-2 list-disc list-inside text-gray-300">
-                <li class="leading-9"><span class="text-dark">Catégories: Sandwiches</span></li>
-                <li class="leading-9"><span class="text-dark">Partage: </span>
-                    <span class="w-32 inline-flex flex-row justify-between">
-                        <i class="fab fa-facebook-f"></i>
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-instagram"></i>
-                        <i class="fab fa-linkedin-in"></i>
-                    </span>
-                </li>
-                <li class="col-span-2  leading-9"><span class="text-dark">Hashtags: #tuMangesQuoiAMidi</span></li>
-            </ul>
-            <!--            <div class="mb-7 w-full">-->
-            <!--                <input type="number" value="0" min="0" step="1" class="w-20 inline-flex border-b-2 border-gray-300 justify-center">-->
-            <!--            </div>-->
-            <div class="mb-2 flex flex-col items-center xl:grid xl:grid-cols-3">
-                 <input type="number" value="1" min="0" step="1"
-                        class="w-36 my-2 inline-flex border-b-2 border-gray-300 justify-center">
-                <a href="#"
-                   class=" my-2 p-2 bg-primary text-gray-100 font-bold rounded-3xl inline-flex w-40 xl:w-48 justify-center">
-                    Ajouter au panier
-                </a>
-                <a href="#"
-                   class=" my-2 p-2 bg-gray-50 text-primary border-solid border-2 border-primary font-bold rounded-3xl inline-flex justify-center w-40 xl:w-48">
-                    Ma liste
-                </a>
-            </div>
-        </div> <!-- END product detail right side -->
-    </div>
-
-    <div class="w-full my-24  text-gray-800"> <!--  product detail bottom -->
-        <ul class="inline-flex text-gray-900 border-b-2 border-gray-100 p-4 pl-0 relative h-11">
-            <li class="pb-4 border-b-2 border-primary absolute top-0">Description</li>
-        </ul>
-        <div class="mt-7">
-            <p class=" mb-7">
-                Osez Goûter ce sandwiche à base de fruits de mer, même si vous pensez ne pas aimer ... surtout si vous
-                croyez ne pas aimer !
-            </p>
-            <p class="mb-7">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium, at consequatur doloremque ex
-                expedita suscipit vero? Ab architecto aspernatur atque dolor iure, maxime modi optio quia quo unde!
-                Beatae consequatur eligendi error nam natus neque numquam, odit. Dolorem earum eum laborum, minima
-                molestias nisi quo reprehenderit rerum similique voluptatibus.
-            </p>
-
+    <div class="flex flex-col">
+        <div class="w-full flex flex-row bg-primary text-gray-50 font-hackney">
+            <span class="w-40">Produit</span>
+            <span class="w-40">Categorie</span>
+            <span class="w-40">Prix</span>
+            <span class="w-40 text-center">Quantité</span>
+            <span class="w-40 text-primary">Total</span>
+            <span class="w-40 ">  </span>
         </div>
-    </div> <!-- END product detail bottom -->
-
-    <section class="w-full md:w-3/4 mx-auto mt-4 mb-7 p-6 md:p-12 md:p-12 flex flex-col md:grid md:grid-cols-3 gap-8 text-gray-800">
-        <!-- Product proposal -->
-        <h2 class="col-span-3 text-5xl mt-4 mb-7 font-black font-hackney">Vous pourriez aussi aimer . . .</h2>
-        <a href="#">
-            <article style="background-image: url('../images/sandwicherie-liege-coeur-clam.png')"
-                     class="bg-cover bg-no-repeat bg-top-2 h-64 relative overflow-hidden border-b-2 border-gray-300">
-
-            <div class="bg-gray-50 absolute -bottom-8 w-full h-28  p-3.5 text-center">
-                <h3 class="text-dark font-hackney text-2xl ">Lorem</h3>
-                <h4 class="text-primary text-xl"> 5 €</h4>
-            </div>
-            </article>
-        </a>
-        <a href="#">
-            <article style="background-image: url('../images/sandwicherie-liege-coeur-clam.png')"
-                     class="bg-cover bg-no-repeat bg-top-2 h-64 relative overflow-hidden border-b-2 border-gray-300">
-
-            <span class="bg-gray-50 absolute -bottom-8 w-full h-28  p-3.5 text-center">
-                <h3 class="text-dark font-hackney text-2xl ">Lorem</h3>
-                <h4 class="text-primary text-xl"> 5 €</h4>
-            </span>
-            </article>
-        </a>
-        <a href="#">
-            <article style="background-image: url('../images/sandwicherie-liege-coeur-clam.png')"
-                     class="bg-cover bg-no-repeat bg-top-2 h-64 relative overflow-hidden border-b-2 border-gray-300">
-
-            <span class="bg-gray-50 absolute -bottom-8 w-full h-28  p-3.5 text-center">
-                <h3 class="text-dark font-hackney text-2xl ">Lorem</h3>
-                <h4 class="text-primary text-xl"> 5 €</h4>
-            </span>
-            </article>
-        </a>
-    </section> <!-- END Product proposal -->
+        <div class="w-full flex flex-row">
+        <span class="w-40">
+            <img src="../images/sandwicherie-liege-coeur-clam.png" alt="" class="w-4 inline">
+            <h2>Lorem</h2>
+        </span>
+            <span class="w-40">Sandwiche</span>
+            <span class="w-40">5 €</span>
+            <span class="w-40 text-center"><input type="number" class="w-20"/></span>
+            <span class="w-40 text-primary">20 €</span>
+            <span class="w-4 "> x </span>
+        </div>
+    </div>
 
 </div>
 
