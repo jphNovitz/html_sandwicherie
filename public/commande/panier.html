@@ -89,27 +89,56 @@
 
 <div class="container mx-auto p-6 -md:p-0 text-gray-900"> <!--container-->
 
-    <div class="flex flex-col">
-        <div class="w-full flex flex-row bg-primary text-gray-50 font-hackney">
-            <span class="w-40">Produit</span>
-            <span class="w-40">Categorie</span>
-            <span class="w-40">Prix</span>
-            <span class="w-40 text-center">Quantité</span>
-            <span class="w-40 text-primary">Total</span>
-            <span class="w-40 ">  </span>
-        </div>
-        <div class="w-full flex flex-row">
-        <span class="w-40">
-            <img src="../images/sandwicherie-liege-coeur-clam.png" alt="" class="w-4 inline">
-            <h2>Lorem</h2>
-        </span>
-            <span class="w-40">Sandwiche</span>
-            <span class="w-40">5 €</span>
-            <span class="w-40 text-center"><input type="number" class="w-20"/></span>
-            <span class="w-40 text-primary">20 €</span>
-            <span class="w-4 "> x </span>
-        </div>
-    </div>
+    <table class="table-fixed text-gray-700">
+        <thead>
+        <tr class="bg-primary text-left text-gray-50 font-bold font-hackney text-xl ">
+            <th class="w-2/3 px-4 py-4 ">Produit</th>
+            <th class="w-44 px-4 py-6 ">Catégories</th>
+            <th class="w-14 px-4 py-6 ">prix</th>
+            <th class="w-20 px-4 py-6 ">Qté</th>
+            <th class="w-7 px-4 py-6 ">Total</th>
+            <th class="w-14 px-6 py-6 "> &nbsp; &nbsp;</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="px-4 py-6 ">Coeur de clem</td>
+            <td class="px-4 py-6 ">Sandwiches</td>
+            <td class="px-4 py-6 ">5 €</td>
+            <td class="px-4 py-6 "><input type="number" value="1" class="w-12"/></td>
+            <td class="px-4 py-6 ">5 €</td>
+            <td class="px-6 py-6 "><i class="fas fa-times"></i></td>
+        </tr>
+        <tr>
+            <td class="px-4 py-6 ">Coeur de clem</td>
+            <td class="px-4 py-6 ">Sandwiches</td>
+            <td class="px-4 py-6 ">5 €</td>
+            <td class="px-4 py-6 "><input type="number" value="1" class="w-12"/></td>
+            <td class="px-4 py-6 ">5 €</td>
+            <td class="px-6 py-6 "><i class="fas fa-times"></i></td>
+        </tr>
+        <tr>
+            <td class="px-4 py-6 ">Coeur de clem</td>
+            <td class="px-4 py-6 ">Sandwiches</td>
+            <td class="px-4 py-6 ">5 €</td>
+            <td class="px-4 py-6 "><input type="number" value="1" class="w-12"/></td>
+            <td class="px-4 py-6 ">5 €</td>
+            <td class="px-6 py-6 "><i class="fas fa-times"></i></td>
+        </tr>
+
+        <tfoot class="border-solid border-t-2 border-gray-300">
+        <tr>
+            <td colspan="3" class="px-4 py-6">
+                <a href="#" class="bg-primary text-gray-50 rounded-3xl p-2">continue shopping</a>
+                <a href="#" class="ml-5"><i class="fas fa-times"></i> Clear shopping cart </a>
+            </td>
+            <td colspan="3" class="px-4 py-6">Sous-total: <span class="text-primary"> 55 €</span></td>
+        </tr>
+        </tfoot>
+
+        </tbody>
+    </table>
+
 
 </div>
 
