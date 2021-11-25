@@ -89,11 +89,12 @@
 
 <div class="container mx-auto p-6 -md:p-0 text-gray-900"> <!--container-->
 
-    <table class="table-fixed text-gray-700">
+    <table class="table-fixed text-gray-700"
+           style="border-spacing: 0 1rem">
         <thead>
         <tr class="bg-primary text-left text-gray-50 font-bold font-hackney text-xl ">
             <th class="w-2/3 px-4 py-4 ">Produit</th>
-            <th class="w-44 px-4 py-6 ">Catégories</th>
+            <th class="w-44 px-4 py-6 hidden md:table-cell ">Catégories</th>
             <th class="w-14 px-4 py-6 ">prix</th>
             <th class="w-20 px-4 py-6 ">Qté</th>
             <th class="w-7 px-4 py-6 ">Total</th>
@@ -101,25 +102,25 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-            <td class="px-4 py-6 ">Coeur de clem</td>
-            <td class="px-4 py-6 ">Sandwiches</td>
+        <tr class="shadow-none hover:shadow-lg transition-shadow duration-900 ease-in-out">
+            <td class="px-4 py-6 ">Coeur de clam</td>
+            <td class="px-4 py-6 hidden md:table-cell ">Sandwiches</td>
             <td class="px-4 py-6 ">5 €</td>
             <td class="px-4 py-6 "><input type="number" value="1" class="w-12"/></td>
             <td class="px-4 py-6 ">5 €</td>
             <td class="px-6 py-6 "><i class="fas fa-times"></i></td>
         </tr>
-        <tr>
-            <td class="px-4 py-6 ">Coeur de clem</td>
-            <td class="px-4 py-6 ">Sandwiches</td>
+        <tr class="shadow-none hover:shadow-lg transition-shadow duration-900 ease-in-out">
+            <td class="px-4 py-6 ">Coeur de clam</td>
+            <td class="px-4 py-6 hidden md:table-cell ">Sandwiches</td>
             <td class="px-4 py-6 ">5 €</td>
             <td class="px-4 py-6 "><input type="number" value="1" class="w-12"/></td>
             <td class="px-4 py-6 ">5 €</td>
             <td class="px-6 py-6 "><i class="fas fa-times"></i></td>
         </tr>
-        <tr>
-            <td class="px-4 py-6 ">Coeur de clem</td>
-            <td class="px-4 py-6 ">Sandwiches</td>
+        <tr class="shadow-none hover:shadow-lg transition-shadow duration-900 ease-in-out">
+            <td class="px-4 py-6 ">Coeur de clam</td>
+            <td class="px-4 py-6 hidden md:table-cell ">Sandwiches</td>
             <td class="px-4 py-6 ">5 €</td>
             <td class="px-4 py-6 "><input type="number" value="1" class="w-12"/></td>
             <td class="px-4 py-6 ">5 €</td>
@@ -128,16 +129,72 @@
 
         <tfoot class="border-solid border-t-2 border-gray-300">
         <tr>
-            <td colspan="3" class="px-4 py-6">
+            <td colspan="6" class=" px-4 py-6">
+                <span class="flex justify-between flex-col-reverse md:flex-row">
+                <span>
                 <a href="#" class="bg-primary text-gray-50 rounded-3xl p-2">continue shopping</a>
                 <a href="#" class="ml-5"><i class="fas fa-times"></i> Clear shopping cart </a>
+                </span>
+                    <!--            </td>-->
+                    <!--            <td colspan="3" class="px-4 py-6">Sous-total: <span class="text-primary"> 55 €</span></td>-->
+                <span class="my-7 md:my-0">
+                    Sous-total: <i class="text-primary"> 55 €</i>
+                </span>
+            </span>
             </td>
-            <td colspan="3" class="px-4 py-6">Sous-total: <span class="text-primary"> 55 €</span></td>
         </tr>
         </tfoot>
 
         </tbody>
     </table>
+
+    <div class="flex flex-col md:grid md:grid-cols-2 md:gap-12">
+        <div class="bg-gray-50 p-6 flex flex-col justify-top rounded-xl h-auto">
+            <h2 class="font-hackney text-4xl p-5"> Code promo !</h2>
+            <h3 class="p-5">Si vous disposez d'un code promo, indiquez le ci dessous.</h3>
+            <input type="text" class="p-5"/>
+            <a href="#" class="bg-primary text-gray-50 p-5 rounded-3xl p-2 mt-12 inline-flex self-center">Utiliser la
+                réduction</a>
+        </div>
+        <div class="bg-gray-50 p-6 flex flex-col justify-between rounded-xl">
+            <h2 class="font-hackney text-4xl p-5"> Paiement et livraison</h2>
+
+            <span class="border-b-2 border-gray-200 py-5 font-bold text-xl flex justify-between">
+                Sous-total  <span class="text-primary">55 €</span>
+            </span>
+
+            <h3 class="font-bold text-xl pt-7 pb-5 flex justify-start">Choisissez votre mode de livraison</h3>
+            <span class="flex flex-row justify-start ml-5">
+                <input type="checkbox" id="1">
+                <label for="1" class="mx-6">Livraison à domicile <span class="text-black">(1 €)</span></label>
+            </span>
+            <span class="flex flex-row justify-start ml-5">
+                <input type="checkbox" id="2">
+                <label for="2" class="mx-6">Réservation, je viens le chercher (gratuit)</label>
+            </span>
+
+            <h3 class="font-bold text-xl pt-7 pb-5 flex justify-start">Choisissez votre mode de paiement</h3>
+            <span class="flex flex-row justify-start ml-5">
+                <input type="checkbox" id="3">
+                <label for="3" class="mx-6">Je paie à la livraison</label>
+            </span>
+            <span class="flex flex-row justify-start ml-5">
+                <input type="checkbox" id="4">
+                <label for="4" class="mx-6">Payconic</label>
+            </span>
+
+
+            <span class="border-b-2 border-gray-200 py-5 font-bold text-xl flex justify-between">
+                Sous-total  <span class="text-primary">55 €</span>
+            </span>
+
+            <a href="#" class="bg-primary text-gray-50 p-5 rounded-3xl p-2 mt-12 inline-flex self-center">Valider et
+                payer</a>
+
+
+        </div>
+
+    </div>
 
 
 </div>
