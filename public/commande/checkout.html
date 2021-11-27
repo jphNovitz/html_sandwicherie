@@ -89,93 +89,135 @@
 
 <div class="container mx-auto p-6 -md:p-0 text-gray-900"> <!--container-->
 
-    <div class="w-full md:w-1/2 py-12">
-        <h2 class="font-hackney text-4xl">Facturation</h2>
+    <div class="w-full flex flex-col md:grid md:grid-cols-2 gap-12  py-20">
+        <div class="w-full">
+            <h2 class="font-hackney text-4xl">Facturation</h2>
 
-        <form action="">
-            <div class="flex flex-col my-6">
-                <label for="last_name" class="font-bold text-xl uppercase pb-1">Nom</label>
-                <input type="text" id="last_name" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
-            </div>
-            <div class="flex flex-col my-6">
-                <label for="address" class="font-bold text-xl uppercase pb-1">Adresse</label>
-                <input type="text" id="address" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
-            </div>
-            <div class="grid grid-cols-2 gap-12">
+            <form action="">
                 <div class="flex flex-col my-6">
-                    <label for="post_code" class="font-bold text-xl uppercase pb-1">Code Postal</label>
-                    <input type="text" id="post_code" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
+                    <label for="last_name" class="font-bold text-xl uppercase pb-1">Nom</label>
+                    <input type="text" id="last_name" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
                 </div>
                 <div class="flex flex-col my-6">
-                    <label for="city" class="font-bold text-xl uppercase pb-1">Localité</label>
-                    <input type="text" id="city" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
+                    <label for="address" class="font-bold text-xl uppercase pb-1">Adresse</label>
+                    <input type="text" id="address" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
                 </div>
-            </div>
-            <div class="flex flex-col my-6">
-                <label for="phone" class="font-bold text-xl uppercase pb-1">Télephone</label>
-                <input type="text" id="phone" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
-            </div>
-            <div class="flex flex-col my-6">
-                <label for="email" class="font-bold text-xl uppercase pb-1">Email</label>
-                <input type="text" id="email" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
-            </div>
-            <div class="flex flex-row-reverse justify-start my-6 w-1/2 ">
-                <label for="account" class="font-bold text-xl uppercase pb-1 ">Créer un compte</label>
-                <input type="checkbox" id="account" class="w-5 mr-5"/>
-            </div>
-            <div class="flex flex-col my-6">
-                <input type="submit" name="enregistrer"
-                       class="bg-primary text-gray-50 p-2 rounded-3xl text-xl min-w-max" />
-            </div>
-        </form>
+                <div class="flex flex-col md:grid md:grid-cols-2 md:gap-12">
+                    <div class="flex flex-col my-6">
+                        <label for="post_code" class="font-bold text-xl uppercase pb-1">Code Postal</label>
+                        <input type="text" id="post_code" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
+                    </div>
+                    <div class="flex flex-col my-6">
+                        <label for="city" class="font-bold text-xl uppercase pb-1">Localité</label>
+                        <input type="text" id="city" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
+                    </div>
+                </div>
+                <div class="flex flex-col my-6">
+                    <label for="phone" class="font-bold text-xl uppercase pb-1">Télephone</label>
+                    <input type="text" id="phone" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
+                </div>
+                <div class="flex flex-col my-6">
+                    <label for="email" class="font-bold text-xl uppercase pb-1">Email</label>
+                    <input type="text" id="email" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
+                </div>
+                <div class="flex flex-row-reverse justify-end my-6 w-full md:w-1/2 ">
+                    <label for="account" class="font-bold text-xl uppercase pb-1 ">Créer un compte</label>
+                    <input type="checkbox" id="account" class="w-5 mr-5"/>
+                </div>
+                <div class="flex flex-col my-6">
+                    <input type="submit" name="enregistrer"
+                           value="enregistrer"
+                           class="bg-primary text-gray-50 p-2 rounded-3xl text-xl w-48 min-w-max"/>
+                </div>
+            </form>
+        </div>
+        <div class="w-full">
+            <h2 class="font-hackney text-4xl">Detail de Livraison</h2>
+
+            <form action="">
+                <div class="flex flex-col my-6">
+                    <label for="delivery_last_name" class="font-bold text-xl uppercase pb-1">Nom</label>
+                    <input type="text" id="delivery_last_name" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
+                </div>
+                <div class="flex flex-col my-6">
+                    <label for="delivery_address" class="font-bold text-xl uppercase pb-1">Adresse</label>
+                    <input type="text" id="delivery_address" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
+                </div>
+                <div class="flex flex-col md:grid md:grid-cols-2 md:gap-12">
+                    <div class="flex flex-col my-6">
+                        <label for="delivery_post_code" class="font-bold text-xl uppercase pb-1">Code Postal</label>
+                        <input type="text" id="delivery_post_code" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
+                    </div>
+                    <div class="flex flex-col my-6">
+                        <label for="delivery_city" class="font-bold text-xl uppercase pb-1">Localité</label>
+                        <input type="text" id="delivery_city" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
+                    </div>
+                </div>
+                <div class="flex flex-col my-6">
+                    <label for="delivery_phone" class="font-bold text-xl uppercase pb-1">Télephone</label>
+                    <input type="text" id="delivery_phone" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
+                </div>
+                <label for="delivery_note" class="font-bold text-xl uppercase pb-1">Note pour le livreur</label>
+                <textarea name="delivery_note" id="delivery_note" rows="5"
+                          class="w-full bg-gray-100 p-2 leading-5 text-gray-700">
+
+            </textarea>
+
+                <div class="flex flex-col my-6">
+                    <input type="submit" name="enregistrer" value="enregistrer"
+                           class="bg-primary text-gray-50 p-2 rounded-3xl text-xl w-48 min-w-max"/>
+                </div>
+            </form>
+        </div>
     </div>
+    <div>
 
+        <h2 class="font-hackney text-4xl">Votre commande</h2>
+        <table class="table-fixed text-gray-700 my-7"
+               style="border-spacing: 0 1rem">
+            <thead>
+            <tr class="bg-primary text-left text-gray-50 font-bold font-hackney text-xl ">
+                <th class="w-2/3 px-4 py-4 ">Produit</th>
+                <th class="w-44 px-4 py-6 hidden md:table-cell ">Catégories</th>
+                <th class="w-14 px-4 py-6 ">prix</th>
+                <th class="w-20 px-4 py-6 ">Qté</th>
+                <th class="w-7 px-4 py-6 ">Total</th>
+                <th class="w-14 px-6 py-6 "> &nbsp; &nbsp;</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="shadow-none hover:shadow-lg transition-shadow duration-900 ease-in-out">
+                <td class="px-4 py-6 ">Coeur de clam</td>
+                <td class="px-4 py-6 hidden md:table-cell ">Sandwiches</td>
+                <td class="px-4 py-6 ">5 €</td>
+                <td class="px-4 py-6 "><input type="number" value="1" class="w-12"/></td>
+                <td class="px-4 py-6 ">5 €</td>
+                <td class="px-6 py-6 "><i class="fas fa-times"></i></td>
+            </tr>
+            <tr class="shadow-none hover:shadow-lg transition-shadow duration-900 ease-in-out">
+                <td class="px-4 py-6 ">Coeur de clam</td>
+                <td class="px-4 py-6 hidden md:table-cell ">Sandwiches</td>
+                <td class="px-4 py-6 ">5 €</td>
+                <td class="px-4 py-6 "><input type="number" value="1" class="w-12"/></td>
+                <td class="px-4 py-6 ">5 €</td>
+                <td class="px-6 py-6 "><i class="fas fa-times"></i></td>
+            </tr>
+            <tr class="shadow-none hover:shadow-lg transition-shadow duration-900 ease-in-out">
+                <td class="px-4 py-6 ">Coeur de clam</td>
+                <td class="px-4 py-6 hidden md:table-cell ">Sandwiches</td>
+                <td class="px-4 py-6 ">5 €</td>
+                <td class="px-4 py-6 "><input type="number" value="1" class="w-12"/></td>
+                <td class="px-4 py-6 ">5 €</td>
+                <td class="px-6 py-6 "><i class="fas fa-times"></i></td>
+            </tr>
 
-    <table class="table-fixed text-gray-700"
-           style="border-spacing: 0 1rem">
-        <thead>
-        <tr class="bg-primary text-left text-gray-50 font-bold font-hackney text-xl ">
-            <th class="w-2/3 px-4 py-4 ">Produit</th>
-            <th class="w-44 px-4 py-6 hidden md:table-cell ">Catégories</th>
-            <th class="w-14 px-4 py-6 ">prix</th>
-            <th class="w-20 px-4 py-6 ">Qté</th>
-            <th class="w-7 px-4 py-6 ">Total</th>
-            <th class="w-14 px-6 py-6 "> &nbsp; &nbsp;</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr class="shadow-none hover:shadow-lg transition-shadow duration-900 ease-in-out">
-            <td class="px-4 py-6 ">Coeur de clam</td>
-            <td class="px-4 py-6 hidden md:table-cell ">Sandwiches</td>
-            <td class="px-4 py-6 ">5 €</td>
-            <td class="px-4 py-6 "><input type="number" value="1" class="w-12"/></td>
-            <td class="px-4 py-6 ">5 €</td>
-            <td class="px-6 py-6 "><i class="fas fa-times"></i></td>
-        </tr>
-        <tr class="shadow-none hover:shadow-lg transition-shadow duration-900 ease-in-out">
-            <td class="px-4 py-6 ">Coeur de clam</td>
-            <td class="px-4 py-6 hidden md:table-cell ">Sandwiches</td>
-            <td class="px-4 py-6 ">5 €</td>
-            <td class="px-4 py-6 "><input type="number" value="1" class="w-12"/></td>
-            <td class="px-4 py-6 ">5 €</td>
-            <td class="px-6 py-6 "><i class="fas fa-times"></i></td>
-        </tr>
-        <tr class="shadow-none hover:shadow-lg transition-shadow duration-900 ease-in-out">
-            <td class="px-4 py-6 ">Coeur de clam</td>
-            <td class="px-4 py-6 hidden md:table-cell ">Sandwiches</td>
-            <td class="px-4 py-6 ">5 €</td>
-            <td class="px-4 py-6 "><input type="number" value="1" class="w-12"/></td>
-            <td class="px-4 py-6 ">5 €</td>
-            <td class="px-6 py-6 "><i class="fas fa-times"></i></td>
-        </tr>
-
-        <tfoot class="border-solid border-t-2 border-gray-300">
-        <tr>
-            <td colspan="6" class=" px-4 py-6">
+            <tfoot class="border-solid border-t-2 border-gray-300">
+            <tr>
+                <td colspan="6" class=" px-4 py-6">
                 <span class="flex justify-between flex-col-reverse md:flex-row">
-                <span>
-                <a href="#" class="bg-primary text-gray-50 rounded-3xl p-2">continue shopping</a>
-                <a href="#" class="ml-5"><i class="fas fa-times"></i> Clear shopping cart </a>
+                <span class="flex flex-col md:flex-row ">
+                <a href="#" class="bg-primary text-gray-50 rounded-3xl p-2 w-1/2">continue shopping</a>
+                <a href="#" class="md:ml-5"><i class="fas fa-times"></i> Clear shopping cart </a>
                 </span>
                     <!--            </td>-->
                     <!--            <td colspan="3" class="px-4 py-6">Sous-total: <span class="text-primary"> 55 €</span></td>-->
@@ -183,13 +225,13 @@
                     Sous-total: <i class="text-primary"> 55 €</i>
                 </span>
             </span>
-            </td>
-        </tr>
-        </tfoot>
+                </td>
+            </tr>
+            </tfoot>
 
-        </tbody>
-    </table>
-
+            </tbody>
+        </table>
+    </div>
 
 </div>
 
