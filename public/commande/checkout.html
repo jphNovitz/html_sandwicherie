@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Checkout - Sandwicherie Liège - Création de sites web pour l'horeca</title>
+    <link rel="stylesheet" href="../tailwind.css"/>
+    <link rel="preload" href="../fonts/hackney/HackneyPersonalUseOnly.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+          integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="../app.js" defer></script>
+</head>
+<body class="mx-auto text-gray-50">
+<div class="w-screen p-6 bg-detail ">
+    <div class="border-solid border-b  border-gray-50">
+        <div class="toolbar container mx-auto">
+            <aside class="flex flex-wrap md:grid">
+
+                <span class="w-1/2 md:w-auto md:col-start-1">
+                    <a href="https://facebook.com/jphNovitz" title="Sandwicherie Liège sur Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://messenger.com/jphNovitz" title="Envoyez un message sur Messenger">
+                        <i class="fab fa-facebook-messenger"></i>
+                    </a>
+                    <a href="https://instagram.com/jphNovitz" title="Sandwicherie Liège sur Instagram">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                    <a href="https://facebook.com/jphNovitz" title="Sandwicherie Liège sur Tik Tok">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                </span>
+                <span class="w-1/2 md:w-auto md:col-start-2 text-right">7.30 - 18.30</span>
+
+
+                <span class="w-1/2 md:w-auto md:col-end-12 md:text-right"><i class="fas fa-user"></i> Connexion</span>
+                <span class="w-1/2 md:w-auto md:col-end-13 text-right md:text-right"><i
+                        class="fas fa-shopping-cart"></i></span>
+
+            </aside>
+        </div>
+    </div>
+    <span class="flex my-5 md:hidden">
+        <a class="text-gray-50 active:text-green-500 active:font-black" href="#" id="menu-button">
+            <i class="fas fa-bars fa-2x"></i>
+        </a>
+    </span>
+    <div class="container mx-auto">
+        <nav class="bg-transparent md:py-6 mx-auto my-6 flex flex-col md:grid  md:grid-cols-13 gap-4 flex items-center">
+
+            <div class="col-start-1 col-span-5 text-6xl font-black flex justify-center flex-wrap md:justify-start uppercase text-center md:text-left font-hackney">
+                Sandwicherie Liège
+            </div>
+
+            <div id="menu-items"
+                 class="h-0 md:h-auto transition-height duration-1000 ease-in-out  overflow-hidden flex-col md:flex-row md:col-end-13 md:col-span-6 flex md:justify-end">
+
+                <span class="mx-2 ">
+                    <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> Accueil</a>
+                </span>
+                <span class="mx-2">
+                    <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> Menu </a>
+                </span>
+                <span class="mx-2">
+                    <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> photos</a>
+                </span>
+                <span class="mx-2">
+                    <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> A propos</a>
+                </span>
+                <span class="mx-2">
+                    <a class="text-gray-50 active:text-green-500 active:font-black" href="#"> Contact</a>
+                </span>
+                <span class="text-text-gray-50 active:text-green active:font-bolder text-center">
+                    <a href="#"><i class="fas fa-search"></i></a>
+                </span>
+            </div>
+
+        </nav>
+        <header class="cta w-3/4 mx-auto my-8 flex items-center flex-col text-center">
+            <div id="detail-header">
+                <span class="bg-detail-title w-1/2 mx-auto font-hackney font-black text-xl md:text-5xl text-dark px-6 ">
+                    Checkout
+                </span>
+            </div>
+        </header>
+    </div>
+</div>
+
+<div class="container mx-auto p-6 -md:p-0 text-gray-900"> <!--container-->
+
+    <div class="w-full md:w-1/2 py-12">
+        <h2 class="font-hackney text-4xl">Facturation</h2>
+
+        <form action="">
+            <div class="flex flex-col my-6">
+                <label for="last_name" class="font-bold text-xl uppercase pb-1">Nom</label>
+                <input type="text" id="last_name" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
+            </div>
+            <div class="flex flex-col my-6">
+                <label for="address" class="font-bold text-xl uppercase pb-1">Adresse</label>
+                <input type="text" id="address" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
+            </div>
+            <div class="grid grid-cols-2 gap-12">
+                <div class="flex flex-col my-6">
+                    <label for="post_code" class="font-bold text-xl uppercase pb-1">Code Postal</label>
+                    <input type="text" id="post_code" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
+                </div>
+                <div class="flex flex-col my-6">
+                    <label for="city" class="font-bold text-xl uppercase pb-1">Localité</label>
+                    <input type="text" id="city" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
+                </div>
+            </div>
+            <div class="flex flex-col my-6">
+                <label for="phone" class="font-bold text-xl uppercase pb-1">Télephone</label>
+                <input type="text" id="phone" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
+            </div>
+            <div class="flex flex-col my-6">
+                <label for="email" class="font-bold text-xl uppercase pb-1">Email</label>
+                <input type="text" id="email" class="bg-gray-100 p-2 leading-5 text-gray-700"/>
+            </div>
+            <div class="flex flex-row-reverse justify-start my-6 w-1/2 ">
+                <label for="account" class="font-bold text-xl uppercase pb-1 ">Créer un compte</label>
+                <input type="checkbox" id="account" class="w-5 mr-5"/>
+            </div>
+            <div class="flex flex-col my-6">
+                <input type="submit" name="enregistrer"
+                       class="bg-primary text-gray-50 p-2 rounded-3xl text-xl min-w-max" />
+            </div>
+        </form>
+    </div>
+
+
+    <table class="table-fixed text-gray-700"
+           style="border-spacing: 0 1rem">
+        <thead>
+        <tr class="bg-primary text-left text-gray-50 font-bold font-hackney text-xl ">
+            <th class="w-2/3 px-4 py-4 ">Produit</th>
+            <th class="w-44 px-4 py-6 hidden md:table-cell ">Catégories</th>
+            <th class="w-14 px-4 py-6 ">prix</th>
+            <th class="w-20 px-4 py-6 ">Qté</th>
+            <th class="w-7 px-4 py-6 ">Total</th>
+            <th class="w-14 px-6 py-6 "> &nbsp; &nbsp;</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="shadow-none hover:shadow-lg transition-shadow duration-900 ease-in-out">
+            <td class="px-4 py-6 ">Coeur de clam</td>
+            <td class="px-4 py-6 hidden md:table-cell ">Sandwiches</td>
+            <td class="px-4 py-6 ">5 €</td>
+            <td class="px-4 py-6 "><input type="number" value="1" class="w-12"/></td>
+            <td class="px-4 py-6 ">5 €</td>
+            <td class="px-6 py-6 "><i class="fas fa-times"></i></td>
+        </tr>
+        <tr class="shadow-none hover:shadow-lg transition-shadow duration-900 ease-in-out">
+            <td class="px-4 py-6 ">Coeur de clam</td>
+            <td class="px-4 py-6 hidden md:table-cell ">Sandwiches</td>
+            <td class="px-4 py-6 ">5 €</td>
+            <td class="px-4 py-6 "><input type="number" value="1" class="w-12"/></td>
+            <td class="px-4 py-6 ">5 €</td>
+            <td class="px-6 py-6 "><i class="fas fa-times"></i></td>
+        </tr>
+        <tr class="shadow-none hover:shadow-lg transition-shadow duration-900 ease-in-out">
+            <td class="px-4 py-6 ">Coeur de clam</td>
+            <td class="px-4 py-6 hidden md:table-cell ">Sandwiches</td>
+            <td class="px-4 py-6 ">5 €</td>
+            <td class="px-4 py-6 "><input type="number" value="1" class="w-12"/></td>
+            <td class="px-4 py-6 ">5 €</td>
+            <td class="px-6 py-6 "><i class="fas fa-times"></i></td>
+        </tr>
+
+        <tfoot class="border-solid border-t-2 border-gray-300">
+        <tr>
+            <td colspan="6" class=" px-4 py-6">
+                <span class="flex justify-between flex-col-reverse md:flex-row">
+                <span>
+                <a href="#" class="bg-primary text-gray-50 rounded-3xl p-2">continue shopping</a>
+                <a href="#" class="ml-5"><i class="fas fa-times"></i> Clear shopping cart </a>
+                </span>
+                    <!--            </td>-->
+                    <!--            <td colspan="3" class="px-4 py-6">Sous-total: <span class="text-primary"> 55 €</span></td>-->
+                <span class="my-7 md:my-0">
+                    Sous-total: <i class="text-primary"> 55 €</i>
+                </span>
+            </span>
+            </td>
+        </tr>
+        </tfoot>
+
+        </tbody>
+    </table>
+
+
+</div>
+
+
+<div class="bg-footer p-12 py-16  mt-28 mb-0 relative">
+    <aside class="absolute  container mx-auto  -top-10  left-0 right-0 h-20 bg-primary text-center flex flex-col justify-center font-bold ">
+        <p class="text-xl">
+            Besoin d'un site pour votre sandwicherie ?
+            <a href="mailto:hello@jphnovitz.be" title="besoin d'un site pour votre sandwicherie, contactez moi"
+               class="font-black underline">
+                Contactez-moi
+            </a>
+        </p>
+    </aside>
+    <footer class="container mx-auto grid grid-cols-1 md:grid-cols-4  gap-4">
+        <h4 class="mx-auto col-span-4 my-8 font-black text-4xl font-hackney">Sandwicherie Liège</h4>
+        <article>
+            <h5 class="font-bold uppercase">Contact</h5>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> Adresse: Liège (province)</li>
+                <li><i class="fas fa-envelope"></i> Email: <a href="mailto:hello@jphnovitz.be">hello@jphnovitz.be</a>
+                </li>
+                <li><i class="fab fa-whatsapp"></i> Whatsapp: 0460 21 57 59</li>
+            </ul>
+        </article>
+
+        <article>
+            <h5 class=" font-bold uppercase">Categories</h5>
+            <ul>
+                <li class="list-none">Sandwiches</li>
+                <li class="list-none">Salads</li>
+                <li class="list-none">Drinks</li>
+            </ul>
+        </article>
+        <article class="hidden md:flex"><h5 class="font-bold uppercase">Twitter</h5></article>
+        <article class="hidden md:flex"><h5 class="font-bold uppercase">Photos</h5></article>
+    </footer>
+</div>
+
+<div class="w-full p-3 bg-yellow-800 flex flex-col md:grid md:grid-cols-2">
+    <h6 class="text-left text-sm md:text-base">Réalisation Jiffy, Développeur Web à Liège (2021)</h6>
+    <article class="text-center md:text-right">
+        <a href="https://facebook.com/jphNovitz" title="Sandwicherie Liège sur Facebook">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://messenger.com/jphNovitz" title="Envoyez un message sur Messenger">
+            <i class="fab fa-facebook-messenger"></i>
+        </a>
+        <a href="https://instagram.com/jphNovitz" title="Sandwicherie Liège sur Instagram">
+            <i class="fab fa-instagram-square"></i>
+        </a>
+        <a href="https://facebook.com/jphNovitz" title="Sandwicherie Liège sur Tik Tok">
+            <i class="fab fa-tiktok"></i>
+        </a>
+    </article>
+
+</div>
+
+</body>
+</html>
